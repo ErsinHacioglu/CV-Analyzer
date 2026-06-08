@@ -1,0 +1,28 @@
+JOHN DOE
+Backend Software Engineer
+Email: john.doe@email.com | Phone: +90 532 123 45 67
+
+SUMMARY
+Experienced Python developer with 4 years of professional experience building scalable web applications and REST APIs.
+
+TECHNICAL SKILLS
+- Programming: Python, Java, SQL
+- Frameworks: Django, Flask, FastAPI
+- Databases: PostgreSQL, MySQL, MongoDB
+- Tools: Git, GitHub, VS Code, Postman
+- Cloud: AWS (EC2, S3)
+
+EXPERIENCE
+Senior Backend Developer | TechCorp | 2021 - Present
+- Developed microservices using Python and FastAPI
+- Designed PostgreSQL database schemas
+- Implemented REST API endpoints serving 10K+ daily requests
+- Agile Scrum team collaboration
+
+Backend Developer | StartupXYZ | 2019 - 2021
+- Built Django web applications
+- Wrote unit tests with pytest
+- Git version control and code reviews
+
+EDUCATION
+B.S. Computer Science | Istanbul University | 2019

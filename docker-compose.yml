@@ -1,0 +1,36 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: cv_analyzer_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cvuser
+      POSTGRES_PASSWORD: cvpass
+      POSTGRES_DB: cv_analyzer
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cvuser -d cv_analyzer"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    container_name: cv_analyzer_app
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    environment:
+      DATABASE_URL: postgresql://cvuser:cvpass@db:5432/cv_analyzer
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./cv_analyzer/ml/saved_models:/app/cv_analyzer/ml/saved_models
+      - ./gpt_dataset.csv:/app/gpt_dataset.csv:ro
+
+volumes:
+  postgres_data:

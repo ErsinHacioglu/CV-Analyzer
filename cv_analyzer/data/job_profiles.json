@@ -1,0 +1,34 @@
+{
+  "Backend Developer": {
+    "required_skills": ["python", "sql", "git", "docker", "rest api"],
+    "preferred_skills": ["fastapi", "django", "postgresql", "redis", "kubernetes", "aws"]
+  },
+  "Frontend Developer": {
+    "required_skills": ["javascript", "html", "css", "react", "git"],
+    "preferred_skills": ["typescript", "vue", "angular", "next.js", "figma"]
+  },
+  "Data Scientist": {
+    "required_skills": ["python", "pandas", "numpy", "scikit-learn", "sql"],
+    "preferred_skills": ["tensorflow", "pytorch", "jupyter", "matplotlib", "spark"]
+  },
+  "Cloud Engineer": {
+    "required_skills": ["aws", "docker", "kubernetes", "linux", "git"],
+    "preferred_skills": ["terraform", "azure", "gcp", "jenkins", "ansible"]
+  },
+  "Full Stack Developer": {
+    "required_skills": ["python", "javascript", "react", "sql", "git"],
+    "preferred_skills": ["django", "node.js", "docker", "postgresql", "aws"]
+  },
+  "Python Developer": {
+    "required_skills": ["python", "git", "sql", "django", "flask"],
+    "preferred_skills": ["fastapi", "pandas", "pytest", "docker", "aws"]
+  },
+  "Mobile App Developer (iOS/Android)": {
+    "required_skills": ["swift", "kotlin", "git", "java", "rest api"],
+    "preferred_skills": ["flutter", "react", "firebase", "android", "ios"]
+  },
+  "Machine Learning Engineer": {
+    "required_skills": ["python", "tensorflow", "pytorch", "scikit-learn", "git"],
+    "preferred_skills": ["kubernetes", "docker", "aws", "pandas", "spark"]
+  }
+}
